@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material - My LMS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./students.js"></script>
+<!-- Bootstrap CSS -->
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #1c2a38;">
+        <a class="navbar-brand" href="#">
+          <img src="logo.svg" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+          SHEILD LMS
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Dashboard</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="./Students.html">Students</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./classes.html">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./instructors.html">Instructors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Material</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./users.html">Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./calender.html">Calender</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mr-3">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0 custom-btn" type="submit">Search</button>
+            </form>
+            <div class="navbar-text">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Profile
+                </button>
+                <div class="dropdown-menu" aria-labelledby="profileDropdown">
+                  <a class="dropdown-item" href="#">Edit Profile</a>
+                  <a class="dropdown-item" href="#">Change Rules</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+    
+    
+    
+    
+    <div id="Material" class="container-fluid ">
+            <h1 class="mt-4">Welcome to the library</h1>
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <button class="card-button" onclick="openPopup()">Add Material</button>
+                <button class="card-button btn-danger ml-2" onclick="Assign()">Assign</button>
+                <button class="card-button btn-danger ml-2" onclick="deleteSelected()">Delete Selected</button>
+                
+            </div>
+            <br></br>
+            
+            <div class="card-deck" style="max-height: 500px; overflow-y: scroll;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">The Art of Zen - Alan Watts</h5>
+                        <br></br>
+                        <p class="card-text"><a href="https://example.com">Click Here To Download</a></p>
+                        <button type="button" class="btn btn-primary assign-btn">Assign to Instructor</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">The Jungle Book - That one guy</h5>
+                        <br></br>
+                        <p class="card-text"><a href="https://example.com">Click Here To Download</a></p>
+                        <button type="button" class="btn btn-primary assign-btn">Assign to Instructor</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">I Am America and So Can You! - S. Colbert</h5>
+                        <br></br>
+                        <p class="card-text"><a href="https://example.com">Click Here To Download</a></p>
+                        <button type="button" class="btn btn-primary assign-btn">Assign to Instructor</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>

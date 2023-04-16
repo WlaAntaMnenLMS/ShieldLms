@@ -1,0 +1,581 @@
+/* Style the cards in the content area */
+.card {
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-body i {
+    font-size: 5em;
+    color: #fff;
+}
+
+.card-body a {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-body a:hover {
+    background-color: #fff;
+    color: #243342;
+}
+
+.custom-btn {
+    color: #fff; /* set text color to white */
+    background-color: #355676; /* set background color to dark blue */
+    border-color: #090e14; /* set border color to dark blue */
+  }
+  
+  .custom-btn:hover {
+    background-color: #151f29; /* set darker blue color on hover */
+    border-color: #000000;
+  }
+  
+  
+ 
+ 
+  .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(179, 50, 166);
+}
+
+.navbar-brand {
+    color: #fff;
+}
+  
+.navbar-nav li {
+    display: inline-block;
+    
+  }
+  
+  .navbar-nav li a {
+    position: relative;
+  }
+  
+  .navbar-nav li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .navbar-nav li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  .navbar-brand {
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+
+  .navbar-brand:hover {
+    color: rgb(179, 50, 166);
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+}
+  
+  .nav-item {
+    text-align: center;
+  }
+  
+ 
+  .custom-control-label {
+    
+    color: #fff;
+  }
+
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #fff;
+    background-color: #007bff;
+  }
+  
+
+ 
+h1 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+       
+        
+        background-color: #1c2a38;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+      
+
+}
+
+.breadcrumb {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card {
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card i {
+  font-size: 80px;
+  color: #fff;
+}
+
+.container {
+    padding-top: 1px;
+}
+
+
+.modal-dialog {
+  max-width: 90%;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  box-shadow: 0 0 1rem rgba(10, 3, 82, 0.5);
+}
+
+#addStudentBtn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#addStudentBtn:hover {
+  background-color: #0069d9;
+  color: white;
+}
+.popup {
+  display: none; /* Hide popup by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+.popup-content {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  width: 80%;
+  max-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.popup-content form {
+  width: 100%;
+}
+
+.popup-content label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.popup-content input[type="text"], .popup-content textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.popup-content input[type="submit"] {
+  background-color: #af7ac5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content input[type="submit"]:hover {
+  background-color: #8c3d8c;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #555;
+}
+
+.card-button {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-button:hover {
+  background-color: rgb(179, 50, 166);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ebf0ec;
+  transform: translateY(-2px);
+}
+
+.form-inline {
+  display: flex;
+  align-items: center;
+}
+
+.form-inline .form-control {
+  margin-right: 10px;
+}
+
+table {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.table th {
+  font-weight: bold;
+  border: none;
+ 
+  text-align: center;
+}
+
+.table th:hover {
+  cursor: pointer;
+  background-color: rgb(179, 50, 166);
+  color: white;
+}
+
+.table td {
+  text-align: center;
+}
+
+
+.table tbody tr:hover {
+  cursor: pointer;
+  background-color: rgb(223, 142, 215);
+}
+
+.card-container {
+  max-width: 18rem;
+  background-color: rgb(179, 50, 166);
+  box-shadow: 0 4px 8px rgba(199, 4, 4, 0.1);
+  color: #ebf0ec;
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-container:hover {
+  background-color: #f7aef8;
+  transform: translateY(-5px) rotateX(10deg);
+}
+
+ 
+h2 {
+  background: linear-gradient(to right, #ed6ea0, #ec8c69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
+  background-color: #1c2a38;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+}
+
+h2:hover {
+  background: linear-gradient(to right, #fc00ff, #00dbde);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.card {
+  background-color: #0e457c;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #e7e7e7;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #dfdfe2;
+  font-size: 16px;
+}
+
+.assign-btn {
+  background-color: transparent;
+  border: none;
+  color: #f3f6f9;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.assign-btn:hover {
+  color: #f9fcff;
+  text-decoration: none;
+}
+
+.profile-btn {
+  background-color: #ffffff;
+  color: #1c2a38;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #1c2a38;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.navbar-text .dropdown-toggle {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.navbar-text .dropdown-toggle:hover {
+  background-color: #444;
+  border-color: #444;
+  color: #fff;
+}
+
+.navbar-text .dropdown-menu {
+  background-color: #333;
+  border-color: #333;
+}
+
+.navbar-text .dropdown-item {
+  color: #fff;
+}
+
+.navbar-text .dropdown-item:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.my-custom-card {
+  background-color: #1c2a38;
+  border: 1px solid #060606;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+ 
+    height: auto;
+    min-height: 300px; /* adjust the height as needed */
+    overflow-y: scroll;
+  }
+  .calendar {
+    font-family: Arial, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #888;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .days {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 10px;
+  }
+  
+  .day {
+    width: 100px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

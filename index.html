@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - My LMS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./dashboard.js"></script>
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #1c2a38;">
+      <a class="navbar-brand" href="#">
+        <img src="logo.svg" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+        SHEILD LMS
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./Students.html">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./classes.html">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./instructors.html">Instructors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./material.html">Material</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./users.html">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./calender.html">Calender</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-3">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 custom-btn" type="submit">Search</button>
+        </form>
+        <div class="navbar-text">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile
+            </button>
+            <div class="dropdown-menu" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">Edit Profile</a>
+              <a class="dropdown-item" href="#">Change Rules</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Page content -->
+    <div class="container-fluid">
+        <h1 class="mt-4">Dashboard</h1>
+        <div class="row">
+            <div class="col-xl-3 col-md-6">
+              <div class="card bg-primary text-white mb-4">
+                <div class="card-body">
+                  <i class="fas fa-users fa-5x"></i>
+                  
+                  <a href="#" class="btn btn-outline-light mt-3"><i class="fas fa-arrow-right mr-2"></i>View Instructors</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card bg-success text-white mb-4">
+                <div class="card-body">
+                  <i class="fas fa-user-graduate fa-5x"></i>
+                
+                  <a href="#" class="btn btn-outline-light mt-3"><i class="fas fa-arrow-right mr-2"></i>View Students</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card bg-danger text-white mb-4">
+                <div class="card-body">
+                  <i class="fas fa-user fa-5x"></i>
+                  
+                  <a href="#" class="btn btn-outline-light mt-3"><i class="fas fa-arrow-right mr-2"></i>View Users</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card bg-warning text-white mb-4">
+                <div class="card-body">
+                  <i class="fas fa-file-alt fa-5x"></i>
+                  
+                  <a href="#" class="btn btn-outline-light mt-3"><i class="fas fa-arrow-right mr-2"></i>View Materials</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-xl-3 col-md-6">
+              <div class="card bg-info text-white mb-4">
+                <div class="card-body">
+                  <i class="fas fa-chalkboard-teacher fa-5x"></i>
+                
+                  <a href="#" class="btn btn-outline-light mt-3"><i class="fas fa-arrow-right mr-2"></i>View Classes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="card bg-secondary text-white mb-4">
+                <div class="card-body">
+                  <i class="fas fa-cog fa-5x"></i>
+                
+                  <a href="#" class="btn btn-outline-light mt-3"><i class="fas fa-arrow-right mr-2"></i>View Settings</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </body>
+        </html>
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+                    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+          
+   
+            </body>
+            </html>

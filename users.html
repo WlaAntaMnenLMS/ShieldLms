@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - My LMS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./dashboard.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #1c2a38;">
+      <a class="navbar-brand" href="#">
+        <img src="logo.svg" width="30" height="30" class="d-inline-block align-top mr-2" alt="">
+        SHEILD LMS
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Dashboard</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./Students.html">Students</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./classes.html">Classes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./instructors.html">Instructors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./material.html">Material</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./calender.html">Calender</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 mr-3">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 custom-btn" type="submit">Search</button>
+        </form>
+        <div class="navbar-text">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="profileDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+              </button>
+            <div class="dropdown-menu" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">Edit Profile</a>
+              <a class="dropdown-item" href="#">Change Rules</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1 class="mt-4">Users</h1>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="card my-custom-card">
+          <h3 class="card-header">Admin privileges</h3>
+          <div class="card-body privileges">
+            <div class="privileges">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="viewMaterial" value="viewMaterial" checked >
+                <label class="form-check-label" for="viewMaterial">View Material</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="add-and-delete-user-except-super-admin" value="addAndDeleteUserExceptSuperAdm" checked disabled>
+                <label class="form-check-label" for="add-and-delete-user-except-super-admin">Add and Delete Users</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="add-or-delete-instructor-students" value="addOrDeleteInstructorStudents" checked >
+                <label class="form-check-label" for="add-or-delete-instructor-students">Add or Delete Instructor/Students</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="upload-and-edit-material" value="uploadAndEditMaterial" checked >
+                <label class="form-check-label" for="upload-and-edit-material">Upload and Edit Material</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="view-and-edit-class" value="viewAndEditClass" checked >
+                <label class="form-check-label" for="view-and-edit-class">View &amp; Edit Class</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="markExams" value="markExams">
+                <label class="form-check-label" for="markExams">Mark Exams</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card my-custom-card">
+          <h3 class="card-header">Instructor privileges</h3>
+          <div class="card-body privileges">
+            <div class="privileges">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="viewMaterialInstructor" value="viewMaterial">
+                <label class="form-check-label" for="viewMaterialInstructor">View Material</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="uploadMaterial" value="uploadMaterial">
+                <label class="form-check-label" for="uploadMaterial">Upload Material</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="markExamsInstructor" value="markExams">
+                <label class="form-check-label" for="markExamsInstructor">Mark Exams</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="privileges[]" id="viewResults" value="viewResults">
+                <label class="form-check-label" for="viewResults">View Results</label>
+                </div>
+                
+                </div>
+                </div>
+                </div>
+                <div class="card my-custom-card">
+                  <h3 class="card-header">Student privileges</h3>
+                  <div class="card-body privileges">
+                    <div class="privileges">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="privileges[]" id="viewMaterialStudent" value="viewMaterial">
+                        <label class="form-check-label" for="viewMaterialStudent">View Material</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="privileges[]" id="submitAssignment" value="submitAssignment">
+                        <label class="form-check-label" for="submitAssignment">Submit Assignments</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="privileges[]" id="viewGrades" value="viewGrades">
+                        <label class="form-check-label" for="viewGrades">View Grades</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Save</button>
+
+                </form>
+  </body>
+</html>
